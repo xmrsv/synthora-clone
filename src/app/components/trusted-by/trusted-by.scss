@@ -1,0 +1,29 @@
+.trusted-by {
+  padding: 60px 40px;
+  text-align: center;
+  background-color: #050505;
+
+  .label {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    opacity: 0.5;
+
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      font-family: sans-serif; // Placeholder font
+      letter-spacing: -0.5px;
+    }
+  }
+}

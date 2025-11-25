@@ -1,0 +1,133 @@
+.footer {
+  padding: 80px 40px 40px;
+  border-top: 1px solid #222;
+  background: #050505;
+
+  .top-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 60px;
+    margin-bottom: 100px;
+
+    .brand-col {
+      .logo-icon {
+        width: 24px;
+        height: 24px;
+        border: 3px solid #fff;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 40px;
+      }
+
+      .socials {
+        display: flex;
+        gap: 20px;
+        
+        a {
+          color: #666;
+          font-size: 14px;
+          transition: color 0.2s;
+          
+          &:hover { color: #fff; }
+        }
+      }
+    }
+
+    .links-col {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h4 {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      a {
+        font-size: 13px;
+        color: #fff;
+        transition: color 0.2s;
+
+        &:hover { color: var(--primary-green, #4fffa3); }
+      }
+    }
+
+    .newsletter-col {
+      h4 {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 13px;
+        color: #aaa;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        display: flex;
+        gap: 10px;
+
+        input {
+          background: #111;
+          border: 1px solid #333;
+          padding: 10px;
+          border-radius: 4px;
+          color: #fff;
+          flex: 1;
+          font-family: inherit;
+
+          &:focus {
+            border-color: #666;
+            outline: none;
+          }
+        }
+
+        button {
+          background: #fff;
+          color: #000;
+          padding: 0 20px;
+          border-radius: 4px;
+          font-weight: 600;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-top: 1px solid #222;
+    color: #444;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer .top-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .top-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer .bottom-bar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

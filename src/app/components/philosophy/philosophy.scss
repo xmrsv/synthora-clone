@@ -1,0 +1,39 @@
+.philosophy {
+  padding: 160px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 56px;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0 0 100px 0;
+    max-width: 1000px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: flex-end;
+
+    .text-block {
+      max-width: 500px;
+      
+      p {
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+
+        .highlight {
+          color: var(--primary-green, #4fffa3);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .philosophy {
+    h2 { font-size: 36px; }
+  }
+}
